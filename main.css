@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header { /* ( > ) determina a tag direta do Body, nesse caso o header */
+    background-color: brown;
+    padding: 16px 0px;
+}
+
+header .container {
+    display: flex;   
+    align-items: center; 
+    justify-content: space-between;
+}
+
+header li {
+    display: inline; /* (Display) configura o modo que será exibido | (inline) é exibido em linha */
+}
+
+header li a {
+    color: black;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1366px; /* (width) define a largura tela | (1366) largura definida pois é o mínimo de notebooks */
+    margin: 0 auto; /* define a margem */
+}
+
+.articles { /* quando a (class) pertence a uma tag especifica, as alterações dela somente irá atualizar o que está dentro dessa tag  */
+    display: flex; /* (Flex) no Display mantém os conteudos um do lado do outro */
+    flex-wrap: wrap; /* (Flex-wrap: wrap) cria uma nova linha */
+    justify-content: space-between; /* (justify-content: space-between) Distribui o espaço igualmente a todos os itens na tela */
+}
+
+.articles article img {
+    height: 240px;
+    width: 100%;
+}
+
+.articles article { 
+    width: 30%; 
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article { /* ( , ) a vírgula permite selecionar mais de um seletor*/
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: rgb(216, 55, 55);
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    display: inline-block; /* (Inline-block) adiciona uma quebra para evitar a sobre posição */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#Esportes {
+    background-color: rgba(22, 200, 39, 0.3);
+}
+
+#Economia {
+    background-color: rgba(215, 230, 10, 0.3);
+}
+
+#Entretenimento {
+    background-color: rgba(17, 37, 221, 0.3);
+}
+
+#Tecnologia {
+    background-color: rgba(186, 56, 196, 0.3);
+}
